@@ -12,18 +12,18 @@ module.exports = {
     //     : "https://zde4h.sse.codesandbox.io/api", // production api
   },
   webpack: (config, { isServer }) => {
-    if (isServer) {
-      // reset users json on codesandbox every 10 minutes because
-      // the same json data is viewed by all users
-      setInterval(() => {
-        const defaultUsers = [];
-        fs.writeFileSync(
-          "data/users.json",
-          JSON.stringify(defaultUsers, null, 4)
-        );
-        console.log("users reset to default in next.config.js");
-      }, 10 * 60 * 1000);
-    }
+    // if (isServer) {
+    //   // reset users json on codesandbox every 10 minutes because
+    //   // the same json data is viewed by all users
+    //   setInterval(() => {
+    //     const defaultUsers = [];
+    //     fs.writeFileSync(
+    //       "data/users.json",
+    //       JSON.stringify(defaultUsers, null, 4)
+    //     );
+    //     console.log("users reset to default in next.config.js");
+    //   }, 10 * 60 * 1000);
+    // }
 
     return config;
   },

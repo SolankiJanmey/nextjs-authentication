@@ -1,1 +1,11 @@
-[]
+[
+    {
+        "firstName": "janmey",
+        "lastName": "solanki",
+        "username": "janmey",
+        "hash": "$2a$10$hR6glN8lM8eVzt3KF86t2uke9k9Cb7nzDBKg7zt7q6OMer2F0RuLG",
+        "id": 1,
+        "dateCreated": "2021-10-15T16:45:03.535Z",
+        "dateUpdated": "2021-10-15T16:45:03.535Z"
+    }
+]
